@@ -14,7 +14,7 @@ by Jan Krajíc
 
 4. Usage
 
-```
+``` js
 //Input to pick icon
 <input  type="text" class="icon-picker-my" value="dog" data-config-url="./../fa6-categories-free-solid.json">
 
@@ -28,7 +28,7 @@ iconPicker.iconPicker(document.querySelector('.icon-picker-my'));
 
 5. Configuration
 
-```
+```js
 const config = {
     iconConfig: "", //Path to the icon categories json or use data-config-url dataset
     withIconPrefix: false, //Store in input icon name and prefix (fa-dog | dog)
