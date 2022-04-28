@@ -1,10 +1,10 @@
 # This is parser for the font awesome icons pack
 
-### This script filter the categories file to remove icons which is not present in the current version and type (solid,duotone etc)
+### This script filters the category file to remove icons which are not present in the current version and type (solid,duotone etc)
 
 ### All available icons are in the icons.yaml
 
-### Filtered file is used for the picker
+### Output file is used for the icon picker
 
 1. You have to convert yaml metadata files to the json (https://jsonformatter.org/yaml-to-json)
 
