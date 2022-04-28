@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/all.min.css">
+    <link rel="stylesheet" href="./../css/icon_picker.css">
+</head>
+
+<body>
+    <!-- <input value="fas fa-archive" type="text" class="icon-picker-my " data-config-url="./../fa6-categories2.json"> -->
+    <input  type="text" class="icon-picker-my " value="dog" data-config-url="./../FA_config_parser/fa-categories-icons-solid.json">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="./../js/icon_picker.js"></script>
+    <script>
+        // fetch("./../fa6-categories2.json")
+        //     .then(response => {
+        //         return response.json();
+        //     })
+        //     .then(data => {
+        //         const iconPicker = new IconPicker({
+        //             iconConfig: data,
+        //             withIconPrefix: true
+        //         });
+        //         iconPicker.iconPicker(document.querySelector('.icon-picker-my'));
+                
+        //         //Only for dev
+        //        // document.querySelector(".ip-picker-btn").click();
+        //     });
+
+        const iconPicker = new IconPicker();
+        iconPicker.iconPicker(document.querySelector('.icon-picker-my'));
+
+
+    </script>
+</body>
+
+</html>

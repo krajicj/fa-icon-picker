@@ -1,0 +1,136 @@
+/*!
+ * @author Jan Krajíc
+ * 
+ * FA Icon picker by @krajicj - https://github.com/krajicj
+ * License - MIT
+ * Copyright 2022
+ */
+
+.ip-wrapper{
+
+  & .ip-picker-icon{
+    font-size: 1.5rem;
+  }
+  & .ip-picker-btn{
+    min-width: 50px;
+    min-height: 30px;
+  }
+}
+.ip-content {
+  padding: 2rem;
+  max-height: 800px;
+  overflow-y: auto;
+
+  & .ip-close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+ 
+ 
+
+  /* Search bar */
+  & .ip-search-bar {
+    margin: 1rem auto 2rem;
+    width: 60%;
+
+    & input {
+      font-size: 1.5rem !important;
+      min-width: 350px;
+      width: 100%;
+      min-height: 3rem;
+      border-radius: 2.5rem !important;
+      border: 1px solid #2C80EA;
+      padding: 0 2rem;
+      font-family: Arial, 'FontAwesome';
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  /* Icon section */
+  & .ip-icons-content {
+    display: block;
+
+    & .ip-controls{
+        margin-bottom: 2rem;
+        & i{
+            width: 2rem;
+        }
+    }
+
+    & .ip-categories {
+        display: grid;
+        grid-template-rows: repeat(20, minmax(0, 1fr)); 
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        margin-bottom: 2rem;
+
+        &.ip-closed {
+            display: none;
+        }
+
+
+      & .ip-icon-category-item{
+        font-size: 12px;
+        color: #5b6770;
+        cursor: pointer;
+
+        &:hover{
+            color: #2962FF;
+        }
+        
+        & i{
+            width: 2rem;
+            color: #2962FF;
+        }
+      }
+    }
+
+    & .ip-icons {
+      flex: 0.75;
+      display: flex;
+      flex-wrap: wrap;      
+      gap: 2rem;
+      justify-items: center;
+      align-content: flex-start;
+      background-color: #f0f1f3;
+      padding: 2rem;
+      justify-content: space-between;
+
+      & .ip-show-more-btn-wrapper{
+        width: 100%;
+        display: flex;
+
+        & .ip-show-more-btn{
+          margin: auto;
+        }
+      }
+
+      & .ip-icon-wrapper{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5px;
+        padding: 0.5rem;
+        display: flex;
+        color: #5f697d;
+        background-color: #fff;
+
+        &:hover{
+          cursor: pointer;
+          background-color: #fdd835;
+        }
+
+          & i{
+            margin: auto;
+            width: fit-content;
+            font-size: 2em;
+            line-height: 3rem;
+          }
+      }
+    }
+  }
+}
