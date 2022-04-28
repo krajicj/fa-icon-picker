@@ -2,6 +2,8 @@
 
 by Jan Krajíc
 
+![alt text](https://github.com/krajicj/fa-icon-picker/blob/main/screenshot.png?raw=true)
+
 ### How to use
 
 1. Download your FA web pack from https://fontawesome.com/download use FREE or buy PRO
