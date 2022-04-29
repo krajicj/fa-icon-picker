@@ -16,9 +16,12 @@ by Jan Krajíc
 
 ```js
 
-//Input to pick icon
+<!-- Input to pick icon -->
 <input  type="text" class="icon-picker-my" value="dog" data-config-url="./../fa6-categories-free-solid.json">
 
+```
+
+```js
 //Create parser
 const iconPicker = new IconPicker();
 
